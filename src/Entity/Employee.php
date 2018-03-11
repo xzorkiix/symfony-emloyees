@@ -24,7 +24,7 @@ class Employee
 
     /**
      * @ORM\Id
-     * @ORM\Column(name="emp_no")
+     * @ORM\Column(name="emp_no", type="integer")
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $id;
@@ -40,12 +40,12 @@ class Employee
     private $firstName;
 
     /**
-     * @ORM\Column(name="last_name", type="string", length=14)
+     * @ORM\Column(name="last_name", type="string", length=16)
      */
     private $lastName;
 
     /**
-     * @ORM\Column(type="string", length=1, options={"fixed" = true})
+     * @ORM\Column(columnDefinition="enum('M','F')")
      */
     private $gender;
 
