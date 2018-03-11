@@ -12,7 +12,7 @@ class Department
 {
     /**
      * @ORM\Id
-     * @ORM\Column(type="string", name="dept_no", length = 4)
+     * @ORM\Column(type="string", name="dept_no", length = 4, options={"fixed" = true})
      * @ORM\GeneratedValue(strategy="NONE")
      */
     private $id;
