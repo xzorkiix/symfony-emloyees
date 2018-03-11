@@ -18,7 +18,7 @@ class Department
     private $id;
 
     /**
-     * @ORM\Column(name="dept_name", type="string", lenght = 40, unique = true)
+     * @ORM\Column(name="dept_name", type="string", length = 40, unique = true)
      */
     private $name;
 
